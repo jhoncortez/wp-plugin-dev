@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "jonny/basic-carousel",
+	"version": "0.1.0",
+	"title": "Basic Carousel with fetching placeholder images",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Basic Carousel with innerblocks with fetched placeholder images from api",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"allowedBlocks": [
+		"jonny/basic-carousel-item"
+	],
+	"textdomain": "basic-carousel",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
