@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "jonny/team-membes-block",
+	"version": "0.1.0",
+	"title": "Team Members Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block for team members",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"layout": {
+			"type": "string",
+			"default": "grid",
+			"enum": [ "grid", "list" ]
+		},
+		"numberOfMembers": {
+			"type": "number",
+			"default": 3
+		},
+		"department": {
+			"type": "boolean",
+			"default": "all"
+		}
+	},
+	"textdomain": "team-membes-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
